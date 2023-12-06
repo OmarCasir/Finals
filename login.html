@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Dating App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&display=swap');
+    
+  </style>
+
+<body class="body" style="background-color: #ECC3EA;">
+    
+    <header class="header" style="font-family: 'Kanit', sans-serif;">
+
+        <nav class="navbar">
+            <img src="img/logo.png" class="logo"> 
+            <a href=".header">Home</a>
+            <a href=".help">Help</a>
+        </nav>
+
+    </header>
+
+    <div class="bground"></div>
+    <div class="container">
+        <div class="content">
+            <h2 class="title">Find Your Soulmate</h2>
+
+            <div class="text1">
+            <h2>Welcome! <br><span>To our new Web App</span></h2>
+
+                <p>You can use this website for free, 
+                    You can also find your soulmate here.</p>
+            </div>
+        </div>
+
+        <div class="login-box">
+        <div class="form-box register">
+            <form action="process.php" method="post" novalidate>
+
+                <h2>Sign Up</h2>
+
+                <div class="input">
+                    <span class="icon"><box-icon type='solid' name='user'></box-icon></span>
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Username</label>
+                </div>
+
+                <div class="input">
+                    <span class="icon"><box-icon type='solid' name='envelope'></box-icon></span>
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input"> 
+                    <span class="icon"><box-icon name='lock-alt' type='solid' ></box-icon></span>
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                </div>
+ 
+                <div class="input"> 
+                    <span class="icon"><box-icon name='lock-alt' type='solid' ></box-icon></span>
+                    <input type="password" id="password_confirmation" name="password_confirmation" required>
+                    <label for="password_confirmation">Repeat password</label>
+                </div>
+                
+                <div class="remember">
+                    <label><input type="checkbox" required> I Agree with the terms.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Sign Up</button>
+
+                <div class="register1">
+                    <p>Already have an account? <a href="#" class="login-link">Log In</a></p>
+                </div>
+            </form>
+        </div>
+
+            <div class="form-box login"> 
+                <form action="#">
+                    <h2>Log In</h2>
+                    <div class="input">
+                        <span class="icon"><box-icon type='solid' name='envelope'></box-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input"> 
+                        <span class="icon"><box-icon name='lock-alt' type='solid' ></box-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div> 
+                    
+                    <div class="remember">
+                        <label><input type="checkbox" required> Remember me 
+                        </label>
+                        <a href="#">Forgot Password?
+                        </a>
+                    </div>
+
+                    <button type="submit" class="btn">Log In</button>
+
+                    <div class="register1">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
